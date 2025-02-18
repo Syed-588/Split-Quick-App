@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitQuick - Bill Splitter</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="warm-theme"> <!-- Set the initial theme to warm -->
+    <div class="theme-switcher">
+        <button onclick="changeTheme('theme1')">🔥 Warm</button>
+        <button onclick="changeTheme('theme2')">🌊 Cool</button>
+        <button onclick="changeTheme('theme3')">🌿 Fresh</button>
+    </div>
+
+    <div class="container">
+        <h1 id="appTitle">SplitQuick</h1>
+        <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+
+        <label for="totalAmount">Total Amount ($):</label>
+        <input type="number" id="totalAmount" placeholder="Enter total bill" min="0" step="0.01">
+
+        <label for="tip">Tip Percentage:</label>
+        <input type="number" id="tip" placeholder="Enter tip (optional)" min="0" step="0.01">
+
+        <label for="numPeople">Number of People:</label>
+        <input type="number" id="numPeople" placeholder="Enter number of people" min="1">
+
+        <label>
+            <input type="checkbox" id="customSplitToggle"> Customize Amounts
+        </label>
+
+        <div id="customSplits"></div>
+
+        <button onclick="calculateSplit()">Split Bill</button>
+
+        <h2 id="result"></h2>
+
+        <canvas id="splitChart"></canvas>
+
+        <h3 id="historyTitle">History</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <!-- Link to your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
