@@ -1,6 +1,10 @@
 # SplitQuick - Bill Splitter 💰
 A simple web app to split bills easily among friends.
 
+## 🖼️ App Icon  
+![Split-Quick Icon](https://github.com/user-attachments/assets/fc5e91a1-d637-4b93-938c-9ee5db25afa2)
+
+
 ## 🌐 Live Demo
 [Click here to view the app](https://rose-mair-26.tiiny.site)
 
@@ -27,7 +31,6 @@ A simple web app to split bills easily among friends.
 ## 📷 Screenshot
 ![App Screenshot]
 ![image](https://github.com/user-attachments/assets/253913d9-0192-4d76-8709-dcf2caf6ce3e)
-
 
 
 ---
